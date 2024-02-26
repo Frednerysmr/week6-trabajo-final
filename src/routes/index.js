@@ -4,6 +4,7 @@ const routerCategory = require('./category.router');
 const routerProduct = require('./product.router');
 const routerCart = require('./cart.router');
 const verifyJWT = require('../utils/verifyJWT');
+const routerPurcahse = require('./purchase.router');
 const router = express.Router();
 
 
@@ -11,6 +12,8 @@ const router = express.Router();
 router.use('/users', routerUser)
 router.use('/categories', routerCategory)
 router.use('/products', routerProduct)
-router.use('/cart',verifyJWT, routerCart)
+router.use('/cart',verifyJWT, routerCart) // protegida
+router.use('/purchase',verifyJWT, routerPurcahse)  //protegida
+
 
 module.exports = router;
