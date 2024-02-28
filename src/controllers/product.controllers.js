@@ -56,8 +56,6 @@ const setImages =  catchError(async(req,res) => {//products/:id/images
     const images = await product.getProductImgs()
 
     return res.json(images)
-
-
 })
 
 module.exports = {
