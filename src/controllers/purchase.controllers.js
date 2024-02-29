@@ -20,7 +20,8 @@ const getAll = catchError(async(req, res) => {
                 },
                 {
                     model: ProductImg
-                }]
+                }
+            ]
             }
         ]
     })

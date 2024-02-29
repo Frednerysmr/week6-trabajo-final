@@ -17,9 +17,11 @@ const getAll = catchError(async(req, res) => {
                 model: Category,
                 attributes:['name']
 
-                },{
+                },
+                {
                     model:ProductImg
-                }]
+                }
+            ]
             }
         ]
     });
@@ -40,9 +42,11 @@ const getOne = catchError(async(req, res) => {
                 model: Category,
                 attributes:['name']
 
-                },{
+                },
+                {
                     model:ProductImg
-                }]
+                }
+            ]
             }
         ]
     });
